@@ -5,7 +5,9 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(255, 255, 255));
+  background:url(background.jpg);
+  background-size:cover;
+  
 }
 .page{
   display:flex;
