@@ -173,15 +173,14 @@ body{
     border: solid black 3px;
     border-radius: 15px;
   }
+  .card-2{
+    height: 110%;
+    
+  }
   .card:hover{
     
     scale: 1.02;
     transition: 0.5s;
-  }
-  .card:unho
-  .card-2{
-    height: 110%;
-    
   }
 
 
