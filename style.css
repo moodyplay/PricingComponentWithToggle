@@ -115,14 +115,6 @@ body{
 }
 
 
-.blue{
-  background: -webkit-linear-gradient(#C7D3DC,#5B798E);  
-    background: -moz-linear-gradient(#C7D3DC,#5B798E);  
-    background: -o-linear-gradient(#C7D3DC,#5B798E);  
-    background: linear-gradient(#C7D3DC,#5B798E);  
-  
-  
-}
 
 
 
@@ -139,8 +131,8 @@ body{
     
   }
 
-  /* .card {
-    
+  .card {
+    position: relative;
     background-image: linear-gradient(
       to right,
       hsl(211, 100%, 50%),
@@ -150,7 +142,8 @@ body{
   }
   
   .card::before {
-    
+    border-radius: 13px;
+    position: absolute;
     content: '';
     top: 0;
     right: 0;
@@ -161,13 +154,14 @@ body{
       hsl(344, 100%, 50%),
       hsl(31, 100%, 40%)
     );
-    z-index: -1;
+    z-index: -2;
     transition: opacity 0.5s linear;
     opacity: 0;
-  } */
-
-
-
+  }
+  .card.blue::before {
+    opacity: 1;
+}
+  
   .card{
     -webkit-transition: background 1s ease-out;  
     -moz-transition: background 1s ease-out;  
@@ -179,7 +173,12 @@ body{
     border: solid black 3px;
     border-radius: 15px;
   }
-
+  .card:hover{
+    
+    scale: 1.02;
+    transition: 0.5s;
+  }
+  .card:unho
   .card-2{
     height: 110%;
     
