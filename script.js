@@ -15,3 +15,23 @@ switchEl.addEventListener('change', function () {
         }
     }
 });
+
+document.addEventListener('scroll', function() {
+    for (let card of cardsEl) {
+        if (isElementInViewport(card)) {
+            card.classList.add('card-visible');
+        }else{
+            card.classList.remove('card-visible')
+        }
+    }
+});
+
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
