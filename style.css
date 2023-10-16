@@ -1,26 +1,20 @@
 body{
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height:100%;
   background:url(background.jpg);
   background-size:cover;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
   
 }
 .page{
+  
   display:flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items:center;
-  margin-top: calc(60vh - 320px);
-  gap: 40px;
-  height:100vh;
-  width: 100%;
+  gap: 100px;
+  width: 80%;
   background-color: rgba(0, 0, 0, 0.074);
-  overflow: hidden;
 }
 
 .button-cover, .knobs, .layer
@@ -82,8 +76,6 @@ body{
     z-index: 1;
 }
 
-
-
 .toggle-section{
   
   position: relative;
@@ -92,9 +84,6 @@ body{
   background-color: rgba(0, 255, 255, 0.229);
   
 }
-
-
-
 
 .switch-div{
   
@@ -109,48 +98,69 @@ body{
  justify-content: center;
 }
 
-
-
-
-
-
-
   .cards-section{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    aspect-ratio: 2.4;
     background-color: rgba(144, 238, 144, 0.468);
-    height:calc(15% + 280px);
-    
-    
   }
-
+  
   .card {
     position: relative;
     background-image: linear-gradient(
       to right,
       hsl(211, 100%, 50%),
       hsl(179, 100%, 30%)
-    );
-    z-index: 1;
-    text-align: center;
-    vertical-align: baseline;
+      );
+      z-index: 1;
+      text-align: center;
+      
+      aspect-ratio: 7/8;
+      box-shadow: 0px 0px 30px 0px gray;
+      
+      /* -webkit-transition: background 1s ease-out;  
+      -moz-transition: background 1s ease-out;  
+      -o-transition: background 1s ease-out;  
+      transition: background 1s ease-out;   */
+      transition-duration: 0.25s;
+    margin:3px;
+    height:65%;
+    
+    border: solid black 3px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-2{
+    height: 68%;
+    
+  }
+  .card:hover{
+    
+    scale: 1.02;
+    /* transition: 0.5s; */
+  }
+  .card p:not(.price){
+    font-size: calc(1vh + 10px);
   }
   .price{
     margin: 0;
-    font-size: 60px;
+    font-size:calc(4vh + 30px);
     font-weight: bold;
-    
+    margin-bottom: 20px;
   }
   .small{
     display: inline;
     font-size: 40px;
   }
   .br{
-    padding-bottom:10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    content: "";
+    
+    width: 80%;
     border-bottom: darkgray 1px solid;
   }
   .card::before {
@@ -174,53 +184,44 @@ body{
     opacity: 1;
 }
   
-  .card{
-    /* -webkit-transition: background 1s ease-out;  
-    -moz-transition: background 1s ease-out;  
-    -o-transition: background 1s ease-out;  
-    transition: background 1s ease-out;   */
-    transition-duration: 0.25s;
-    margin:3px;
-    height:100%;
-    width:100%;
-    border: solid black 3px;
-    border-radius: 15px;
-  }
-  .card-2{
-    height: 110%;
-    
-  }
-  .card:hover{
-    
-    scale: 1.02;
-    /* transition: 0.5s; */
-  }
+ 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:955px){
   .cards-section{
+    
     gap:30px;
     flex-direction: column;
-    width:calc(20% + 200px);
-    aspect-ratio: 0.7;
+    height: 300%;
+    aspect-ratio: 7/8;
   }
   .card-2{
-    height: 100%;
+    
   }
   .card:hover{
-    scale:1;
+    scale:none;
   }
   body{
-    overflow: scroll;
-    height:auto;
+    
+    
   }
   .page{
-    margin-top: 0;
-    height:auto;
-    padding-bottom: 100px;
+    height:200%;
+    width:100%;
+    justify-content:space-evenly;
+    
+    
   }
   .card-visible{
     transform: scale(1.05);
   }
+}
+button{
+  width: 85%;
+  
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
   /* Button 3 */
 #button-3 .knobs:before
