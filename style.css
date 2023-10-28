@@ -38,6 +38,8 @@ body{
     margin: -20px auto 0 auto;
     overflow: hidden;
     transition: 0.15s;
+    -moz-transition: 0.15s;
+    -webkit-transition: 0.15s;
 }
 .button:hover{
   border: solid rgb(161, 161, 161) 1px;
