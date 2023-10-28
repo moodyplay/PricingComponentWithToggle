@@ -110,9 +110,9 @@ body{
   .card {
     position: relative;
     background-image: linear-gradient(
-      to right,
-      hsl(211, 100%, 50%),
-      hsl(179, 100%, 30%)
+      to bottom right,
+      hsl(211, 68%, 62%),
+      hsl(189, 53%, 51%)
       );
       z-index: 1;
       text-align: center;
@@ -163,7 +163,7 @@ body{
     content: "";
     
     width: 75%;
-    border-bottom: darkgray 1px solid;
+    border-bottom: rgb(70, 70, 70) 1px solid;
   }
   .card::before {
     border-radius: 13px;
@@ -175,8 +175,8 @@ body{
     left: 0;
     background-image: linear-gradient(
       to bottom,
-      hsl(269, 60%, 72%),
-      hsl(259, 32%, 46%)
+      hsl(269, 61%, 78%),
+      hsl(211, 68%, 62%)
     );
     z-index: -2;
     transition: opacity 0.5s linear;
@@ -275,7 +275,7 @@ button{
 
 #button-3 .checkbox:checked ~ .layer
 {
-  background-color: #fcebeb;
+  background-color: #f2ebfc;
 }
 
 #button-3 .checkbox:checked ~ .cards-section .card-2 {
