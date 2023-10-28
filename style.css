@@ -123,7 +123,7 @@ body{
       -moz-transition: background 1s ease-out;  
       -o-transition: background 1s ease-out;  
       transition: background 1s ease-out;   */
-    transition-duration: 0.25s;
+    transition: 0.25s;
     margin:3px;
     width: 300px;
     
@@ -141,7 +141,10 @@ body{
   }
  
   .card:hover{
-    
+    transition:0.1s;
+    p{
+      scale:1.02;
+    }
     scale: 1.02;
     /* transition: 0.5s; */
   }
@@ -151,16 +154,16 @@ body{
   .card p:hover{
     cursor:default;
   }
-  .price{
+  .card .price{
     
     margin: 0;
-    font-size-adjust: 1.5;
+    font-size: 4em;
     font-weight: bold;
     margin-bottom: 5%;
   }
   .small{
-    display: inline;
-    font-size-adjust: 1.2;
+    vertical-align: 5px;
+    font-size: 0.8em;
   }
   .br{
     content: "";
@@ -200,7 +203,6 @@ body{
     
     
   }
-
   .card{
     height:425px;
     max-width: 450px;
@@ -211,6 +213,9 @@ body{
   }
   .card:hover{
     scale:none;
+    p{
+      scale:none;
+    }
   }
   .button{
   border: solid rgb(161, 161, 161) 1.5px;
@@ -223,9 +228,7 @@ body{
     
     
   }
-  .card-visible{
-    transform: scale(1.05);
-  }
+  
 }
 button{
   width: 80%;
