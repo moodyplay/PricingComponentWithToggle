@@ -188,7 +188,7 @@ body{
   
  
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:950px){
   .cards-section{
     margin-top: 5vh;
     margin-bottom:10vh;
@@ -285,8 +285,9 @@ button{
 }
 
 .v{
-  margin: 0;
-  position: fixed;
+  
+  
+  position:fixed;
   bottom:0%;
-  right: 0%;
+  
 }
