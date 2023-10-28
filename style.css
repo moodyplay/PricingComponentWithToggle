@@ -175,8 +175,8 @@ body{
     left: 0;
     background-image: linear-gradient(
       to bottom,
-      hsl(344, 100%, 50%),
-      hsl(31, 100%, 40%)
+      hsl(269, 60%, 72%),
+      hsl(259, 32%, 46%)
     );
     z-index: -2;
     transition: opacity 0.5s linear;
@@ -188,18 +188,19 @@ body{
   
  
 
-@media screen and (max-width:955px){
+@media screen and (max-width:750px){
   .cards-section{
     margin-top: 5vh;
     margin-bottom:10vh;
-    gap:30px;
+    gap:15px;
     flex-direction: column;
     
     
   }
   .card{
-    padding-left: 30%;
-    padding-right: 30%;
+    height:375px;
+    max-width: 350px;
+    width:80vw;
   }
   .card-2{
     
@@ -248,7 +249,7 @@ button{
     text-align: center;
     line-height: 0.15;
     padding: 9px 4px;
-    background-color: #7678ED;
+    background-color: hsl(211, 100%, 50%);
     border-radius: 50%;
     transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
 }
@@ -269,7 +270,7 @@ button{
     content: '\203A';
     letter-spacing: -2px;
     left: 42px;
-    background-color: #F18701;
+    background-color: hsl(259, 46%, 59%);
 }
 
 #button-3 .checkbox:checked ~ .layer

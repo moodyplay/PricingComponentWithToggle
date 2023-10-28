@@ -11,11 +11,11 @@ switchEl.addEventListener('change', function () {
         const priceElement = parseFloat(price.textContent);
         
         if (switchEl.checked) {
-            card.classList.add("blue"); // Add a class to control the opacity
+            card.classList.add("blue");
             price.textContent = (priceElement * 12);
 
         } else {
-            card.classList.remove("blue"); // Remove the class to control the opacity
+            card.classList.remove("blue");
             price.textContent = (priceElement * (1/12));
         }
     }
@@ -31,12 +31,12 @@ document.addEventListener('scroll', function() {
     }
 });
 
-function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
+// function isElementInViewport(el) {
+//     var rect = el.getBoundingClientRect();
+//     return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+// }
