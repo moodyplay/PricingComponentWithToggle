@@ -125,7 +125,7 @@ body{
       transition: background 1s ease-out;   */
     transition-duration: 0.25s;
     margin:3px;
-    width: 30vh;
+    width: 300px;
     
     padding-bottom: 0.5%;
     margin-top: 4%;
@@ -146,7 +146,10 @@ body{
     /* transition: 0.5s; */
   }
    .card p{
-    font-size: calc(1vh + 10px);
+    font-size: 20px;
+  }
+  .card p:hover{
+    cursor:default;
   }
   .price{
     
@@ -231,6 +234,9 @@ button{
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
  
+}
+button:hover{
+  cursor:pointer;
 }
   /* Button 3 */
 #button-3 .knobs:before
